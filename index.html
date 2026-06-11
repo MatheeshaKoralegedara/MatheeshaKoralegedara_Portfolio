@@ -65,14 +65,15 @@
   /* NAV */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    background: rgba(10,15,30,0.93);
+    background: rgba(26, 23, 47, 0.93);
     backdrop-filter: blur(14px);
     border-bottom: 1px solid var(--border);
     padding: 0 2rem;
     display: flex; align-items: center; justify-content: space-between;
     height: 64px;
   }
-  .nav-logo { font-family: var(--mono); font-size: 1rem; color: var(--accent); letter-spacing: 0.05em; }
+  .nav-logo { display: flex; align-items: center; font-family: var(--mono); font-size: 1rem; color: var(--accent); letter-spacing: 0.05em; }
+  .nav-logo img { height: 45px; width: auto; display: block; }
   .nav-logo span { color: var(--text2); }
   .nav-links { display: flex; gap: 2rem; list-style: none; }
   .nav-links a {
@@ -439,7 +440,7 @@
 </div>
 
 <nav>
-  <div class="nav-logo">mk<span>.dev</span></div>
+  <div class="nav-logo"><img src="images/mk1.png" alt="mk.dev"/></div>
   <ul class="nav-links" id="navLinks">
     <li><a href="#about">about</a></li>
     <li><a href="#experience">experience</a></li>
